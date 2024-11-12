@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:padding="20dp">
+
+    <!-- The main dialog layout with rounded corners -->
+    <RelativeLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_edittext_filled">
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dy"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/dialog_message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <!-- Yes Button -->
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:backgroundTint="#e0aaff"
+                android:layout_marginEnd="10dp" />
+
+            <!-- No Button -->
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:backgroundTint="#e0aaff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/log_out_filled"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="-90dp"
+        android:scaleType="centerCrop" />
+
+
+</FrameLayout>

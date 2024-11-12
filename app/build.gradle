@@ -44,5 +44,6 @@ dependencies {
     implementation libs.sdp.android
     implementation libs.circleimageview
     implementation libs.firebase.core
+    implementation libs.picasso
 
 }

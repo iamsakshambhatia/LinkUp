@@ -3,6 +3,10 @@ package com.example.linkup;
 public class Users {
     String fname, lname, mail, pwd, id, status, profilepic;
 
+    public Users() {
+        // Required for calls to DataSnapshot.getValue(Users.class)
+    }
+
     public String getFname() {
         return fname;
     }

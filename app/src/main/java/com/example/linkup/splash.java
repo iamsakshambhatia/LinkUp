@@ -7,6 +7,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 //import androidx.activity.EdgeToEdge;
 //import androidx.core.graphics.Insets;
 //import androidx.core.view.ViewCompat;
@@ -23,9 +26,17 @@ public class splash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(splash.this, login.class);
-                startActivity(intent);
-                finish();
+                FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+                if (currentUser != null) {
+                    // User is signed in, redirect to the home screen
+                    Intent intent = new Intent(splash.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Intent intent = new Intent(splash.this, login.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         }, 2000);
     }

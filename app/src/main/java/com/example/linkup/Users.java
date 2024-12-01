@@ -7,6 +7,16 @@ public class Users {
         // Required for calls to DataSnapshot.getValue(Users.class)
     }
 
+//    public Users(String id, String fname,String lname, String mail, String pwd, String profilepic, String status){
+//        this.id = id;
+//        this.fname = fname;
+//        this.lname = lname;
+//        this.mail = mail;
+//        this.pwd = pwd;
+//        this.profilepic = profilepic;
+//        this.status = status;
+//    }
+
     public String getFname() {
         return fname;
     }

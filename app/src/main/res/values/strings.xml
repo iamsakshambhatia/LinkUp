@@ -22,4 +22,7 @@
     <string name="yes">Yes</string>
     <string name="type_the_messages">Message...</string>
     <string name="saksham">saksham</string>
+    <string name="name2">Name</string>
+    <string name="status2">Status</string>
+    <string name="save">Save</string>
 </resources>

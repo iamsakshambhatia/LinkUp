@@ -30,7 +30,6 @@ android {
 }
 
 dependencies {
-
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
@@ -45,5 +44,4 @@ dependencies {
     implementation libs.circleimageview
     implementation libs.firebase.core
     implementation libs.picasso
-
 }

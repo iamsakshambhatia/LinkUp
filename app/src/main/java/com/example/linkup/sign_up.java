@@ -133,7 +133,7 @@ public class sign_up extends AppCompatActivity {
                                    });
                                } else {
                                    String status = "Hey! I'm using LinkUp!";
-                                   profilepic = "https://firebasestorage.googleapis.com/v0/b/linkup-343e1.appspot.com/o/default_user.png?alt=media&token=fd597df6-12e4-4b21-bc3c-22ec09b01457";
+                                   profilepic = "https://firebasestorage.googleapis.com/v0/b/linkup-343e1.appspot.com/o/default_user.png?alt=media&token=1188f982-aaed-4dc7-a741-b7f322dccbc3";
                                    Users users = new Users(fname,lname,mail,pwd,id,status,profilepic);
                                    reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                                        @Override
